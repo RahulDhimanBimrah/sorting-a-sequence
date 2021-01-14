@@ -1,0 +1,13 @@
+#sorting
+def sort(seq):
+    for start in range(len(seq)):
+        minpos=start
+        for i in range (start,len(seq)):
+            if seq[i]<seq[minpos]:
+                minpos=i
+        (seq[start],seq[minpos])=(seq[minpos],seq[start])
+    return(seq)
+
+h=[5,8,6,3,4]
+print(sort(h))
+    
